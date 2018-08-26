@@ -3,6 +3,8 @@ node-ads1x15
 
 A library providing access to ADS1015 and ADS1115 I2C analog to digital converters on Raspberry Pi. Basically a javascript port of the python library from Adafruit.
 
+This version depends on a forked version of node-i2c that removes all dependencies on CoffeeScript due to the CoffeeScript parser using labaeled declarations that failed ES6 module and Acron strict validation.
+
 ## Installation
 
   npm install node-ads1x15 --save
