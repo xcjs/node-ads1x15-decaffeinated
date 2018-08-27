@@ -7,7 +7,7 @@ This version depends on a forked version of node-i2c that removes all dependenci
 
 ## Installation
 
-  npm install node-ads1x15 --save
+  npm install node-ads1x15-decaffeinated --save
 
 ## Usage
   The following shows how to use the node-ads1x15 module from a Node.js application. (Note that the ads1x15 address and i2c bus are optional arguments.)
@@ -46,10 +46,6 @@ This version depends on a forked version of node-i2c that removes all dependenci
 ## Tests
 
   none (yet)
-
-## Contributing
-
-  contact info@boffinry.org with any bugs.
 
 ## Release History
 
