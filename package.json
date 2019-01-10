@@ -11,7 +11,8 @@
     "url": "https://github.com/xcjs/node-ads1x15-decaffeinated.git"
   },
   "keywords": [
-    "ads1015"
+    "ads1015",
+    "ads1115"
   ],
   "author": "Chuck Werbick <info@boffinry.org> (http://boffinry.org)",
   "contributors": [
