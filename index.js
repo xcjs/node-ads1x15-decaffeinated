@@ -1,6 +1,6 @@
 
 // javascript/node  rewrite of the Adafruit ads1x15 python library...
-var i2c = require('i2c'); 
+var i2c = require('i2c-decaffeinated'); 
 var async = require('async');
 
 // chip
