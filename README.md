@@ -12,7 +12,7 @@ This version depends on a forked version of node-i2c that removes all dependenci
 ## Usage
   The following shows how to use the node-ads1x15 module from a Node.js application. (Note that the ads1x15 address and i2c bus are optional arguments.)
   ```javascript
-  var ads1x15 = require('node-ads1x15');  
+  var ads1x15 = require('node-ads1x15-decaffeinated');  
   var chip = 0; //0 for ads1015, 1 for ads1115  
   
   //Simple usage (default ADS address on pi 2b or 3):
@@ -29,18 +29,20 @@ This version depends on a forked version of node-i2c that removes all dependenci
   
   //somewhere to store our reading   
   var reading  = 0;  
-  if(!adc.busy)  
-  {  
-    adc.readADCSingleEnded(channel, progGainAmp, samplesPerSecond, function(err, data) {   
-      if(err)  
-      {  
-        //logging / troubleshooting code goes here...  
-        throw err;  
-      }  
-      // if you made it here, then the data object contains your reading!  
-      reading = data;  
-      // any other data processing code goes here...  
-    );  
+  if(!adc.busy) {  
+    adc.readADCSingleEnded(channel, 
+      progGainAmp, 
+      samplesPerSecond, 
+      function(err, data) {   
+        if(err) {  
+          //logging / troubleshooting code goes here...  
+          throw err;  
+        }  
+        // if you made it here, then the data object contains your reading!  
+        reading = data;  
+        // any other data processing code goes here...  
+      }
+    );
   }  
   ````    
 ## Tests
